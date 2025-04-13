@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Poppins',sans-serif;
-    background-color: #181726;
+    
 }
 
 img{
@@ -156,9 +156,7 @@ h2{
     gap: 50px;
 }
 
-.product-1 {
-    background-color: #2A223A;
-}
+
 
 .product-1 img {
     width: 400px;
