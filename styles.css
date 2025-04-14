@@ -141,15 +141,27 @@ h2{
     margin-bottom: 45px;
 }
 
-.popular-content{
+.popular-content {
+    padding: 32px;
+    background-color: #E0E0E0;
+}
+
+.popular-content .carousel-inner {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-.popular-content img{
-    width: 150px;
+.popular-content .carousel-item {
+    text-align: center;
 }
 
+.popular-content img {
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    margin: 0 auto;
+}
 .product-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
