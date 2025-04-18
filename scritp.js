@@ -8,7 +8,7 @@ let contact = document.querySelectorAll('.contact-contect');
 let redes = document.querySelectorAll('.redes');
 let iconPrev = document.getElementsByClassName('carousel-control-prev-icon');
 let iconNext = document.getElementsByClassName('carousel-control-next-icon');
-
+let title = document.getElementsByClassName('mejoresJuegos');
 toggle.addEventListener('change', (event) => {
     let checked = event.target.checked;
     document.body.classList.toggle('dark');
@@ -18,6 +18,7 @@ toggle.addEventListener('change', (event) => {
         Array.from(product_txt).forEach(h3 => {
             h3.style.color = "white";
         });
+        title[0].style.color = "white"; 
         products.forEach(p => p.style.backgroundColor = '#2A223A');
         contact.forEach(p => p.style.backgroundColor = '#2A223A');
         redes.forEach(p => { p.style.color="white"});
@@ -31,6 +32,7 @@ toggle.addEventListener('change', (event) => {
         Array.from(product_txt).forEach(h3 => {
             h3.style.color = "black";
         });
+        title[0].style.color = "black"; 
         products.forEach(p => p.style.backgroundColor = '#f0f0f5');
         contact.forEach(p => p.style.backgroundColor = '#f0f0f5');
         redes.forEach(p => { p.style.color="black"});

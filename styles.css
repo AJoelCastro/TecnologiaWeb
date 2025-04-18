@@ -147,7 +147,16 @@ img{
 .btn-1:hover{
     background-color: #FF5A2C;
 }
-
+.mejoresJuegos{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 .popular{
     padding: 100px 0;
     text-align: cente;
