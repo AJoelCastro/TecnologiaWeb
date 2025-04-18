@@ -4,94 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Pagos</title>
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./style2.css">
-
 </head>
 <body>
-
-<div class="container">
-
-    <form action="">
-
-        <div class="row">
-
-            <div class="col">
-
-                <h3 class="title">billing address</h3>
-
-                <div class="inputBox">
-                    <span>Nombres :</span>
-                    <input type="text" placeholder="john deo">
-                </div>
-                <div class="inputBox">
-                    <span>Correo :</span>
-                    <input type="email" placeholder="example@example.com">
-                </div>
-                <div class="inputBox">
-                    <span>Dirección :</span>
-                    <input type="text" placeholder="room - street - locality">
-                </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text" placeholder="mumbai">
-                </div>
-
-                <div class="flex">
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Información de Contacto</h3>
                     <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text" placeholder="india">
+                        <span>Nombres :</span>
+                        <input type="text" placeholder="john deo">
                     </div>
                     <div class="inputBox">
-                        <span>zip code :</span>
-                        <input type="text" placeholder="123 456">
+                        <span>Correo :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Dirección :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>Ciudad :</span>
+                        <input type="text" placeholder="mumbai">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>País :</span>
+                            <input type="text" placeholder="india">
+                        </div>
+                        <div class="inputBox">
+                            <span>Código Postal :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
                     </div>
                 </div>
-
+                <div class="col">
+                    <h3 class="title">Pagos</h3>
+                    <div class="inputBox">
+                        <span>Tarjetas Aceptadas :</span>
+                        <img src="./imagenes/card_img.png" alt="tarjetas">
+                    </div>
+                    <div class="inputBox">
+                        <span>Titulas de la tarjeta :</span>
+                        <input type="text" placeholder="mr. john deo">
+                    </div>
+                    <div class="inputBox">
+                        <span>Número de Tarjeta :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Fecha de Expiración :</span>
+                        <input type="text" placeholder="january">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Año de Expiración :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col">
-
-                <h3 class="title">payment</h3>
-
-                <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="./imagenes/card_img.png" alt="tarjetas">
-                </div>
-                <div class="inputBox">
-                    <span>name on card :</span>
-                    <input type="text" placeholder="mr. john deo">
-                </div>
-                <div class="inputBox">
-                    <span>credit card number :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
-                </div>
-                <div class="inputBox">
-                    <span>exp month :</span>
-                    <input type="text" placeholder="january">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>exp year :</span>
-                        <input type="number" placeholder="2022">
-                    </div>
-                    <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="text" placeholder="1234">
-                    </div>
-                </div>
-
-            </div>
-    
-        </div>
-
-        <input type="submit" value="proceed to checkout" class="submit-btn">
-
-    </form>
-
-</div>    
-    
+            <a href="./index.html">
+                <input value="Realizar Pago" class="submit-btn"></input>
+            </a>
+        </form>
+    </div>    
 </body>
 </html>
