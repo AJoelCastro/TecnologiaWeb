@@ -49,6 +49,24 @@ img{
     align-items: center;
     justify-content: space-between;
 }
+#carousel {
+    height: 600px;
+    width: 100%;
+    background: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+
+#carousel .carousel-item img {
+    object-fit:cover;
+}
+
+.carousel-control-prev-icon{
+    background-color: #FF5A2C;
+}
+.carousel-control-next-icon{
+    background-color: #FF5A2C;
+}
 
 .logo{
     color: #FF5A2C;
