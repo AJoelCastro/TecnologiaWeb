@@ -1,4 +1,5 @@
 let toggle = document.getElementById('toggle');
+let botonesComprar = document.querySelectorAll('.btn');
 let label_toggle = document.getElementById('label_toggle');
 let body = document.getElementById('body');
 let carousel = document.getElementById('carousel');
@@ -26,6 +27,10 @@ toggle.addEventListener('change', (event) => {
         iconPrev[0].style.backgroundColor = "#2A223A";
         iconNext[0].style.backgroundColor = "#2A223A";
         label_toggle.style.color = "yellow";
+        botonesComprar.forEach(boton => {
+            boton.classList.remove('btn-dark');
+            boton.classList.add('btn-light');
+        });
     } else {
         label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
         body.setAttribute('data-bs-theme', 'light');
@@ -40,6 +45,10 @@ toggle.addEventListener('change', (event) => {
         iconPrev[0].style.backgroundColor = "#FF5A2C";
         iconNext[0].style.backgroundColor = "#FF5A2C";
         label_toggle.style.color = "#181726";
+        botonesComprar.forEach(boton => {
+            boton.classList.remove('btn-light');
+            boton.classList.add('btn-dark');
+        });
     }
 });
 
