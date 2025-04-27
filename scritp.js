@@ -7,6 +7,7 @@ let product_txt = document.getElementsByTagName('h3');
 let products = document.querySelectorAll('.product-1');
 let contact = document.querySelectorAll('.contact-contect');
 let redes = document.querySelectorAll('.redes');
+let textito = document.querySelectorAll('.textito');
 let iconPrev = document.getElementsByClassName('carousel-control-prev-icon');
 let iconNext = document.getElementsByClassName('carousel-control-next-icon');
 let title = document.getElementsByClassName('mejoresJuegos');
@@ -31,6 +32,7 @@ toggle.addEventListener('change', (event) => {
             boton.classList.remove('btn-dark');
             boton.classList.add('btn-light');
         });
+        textito.forEach(p => p.style.color = "#F0F0F1");
     } else {
         label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
         body.setAttribute('data-bs-theme', 'light');
@@ -49,6 +51,7 @@ toggle.addEventListener('change', (event) => {
             boton.classList.remove('btn-light');
             boton.classList.add('btn-dark');
         });
+        textito.forEach(p => p.style.color = "#010729");
     }
 });
 

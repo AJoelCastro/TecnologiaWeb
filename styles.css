@@ -28,7 +28,12 @@ img{
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.textito{
+    font-size: 1.5rem;
+    font-weight: semibold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+}
 .header{
     background-image: url(imagenes/bg.jpg);
     background-position: center;
@@ -36,7 +41,7 @@ img{
     background-size: cover;
     align-items: center;
     min-height: 80vh;
-    padding: 80px 0;
+    padding: 80px 30px;
 }
 
 .menu{
@@ -69,7 +74,7 @@ img{
 
 .logo{
     color: #FF5A2C;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -125,7 +130,7 @@ img{
 
 .header-txt p{
     font-size: 17px;
-    color: #E0E0E0;
+    color: #010729;
     margin-bottom: 45px;
 }
 
@@ -197,11 +202,23 @@ h2{
     .product-content {
         grid-template-columns: repeat(3, 1fr);
     }
+    .textito{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70%;
+    }
 }
 
 @media (max-width: 576px) {
     .product-content {
         grid-template-columns: 1fr;
+    }
+    .textito{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
     }
 }
 
