@@ -15,208 +15,250 @@
     />
 </head>
 <body id="body">
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">Nexus Gaming</a>
-            <input type="checkbox" name="" id="menu">
-            <label for="menu">
-                <img src="imagenes/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index2.html">Inicio</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">Nexus Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/index2.html">Pagos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Secciones
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#juegos-del-momento">Juegos del momento</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#todos-los-juegos">Todos los juegos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#correo">Contactanos</a></li>
+                    </ul>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Compra tu <span>juego</span><br>favorito aqui</h1>
-                <p>
-                    ¡Bienvenido a Nexus Gaming! Descubre los últimos y mejores videojuegos para todas las consolas en un solo lugar. Con ofertas exclusivas y un catálogo en constante expansión, siempre encontrarás algo que te apasione. Únete a la comunidad de gamers más entusiasta y lleva tu experiencia de juego al siguiente nivel. ¡Tu aventura comienza aquí!
-                </p>
-                <div class="butons">
-                    <a href="#" class="btn-1">Informacion</a>
-                    <a href="#" class="btn-1">Juegos</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Juegos" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <div class="mode">
+                    <label  for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+                    <input type="checkbox" id="toggle">
                 </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header-txt">
+            <h1>Compra tu <span>juego</span><br>favorito aqui</h1>
+            <p>
+                ¡Bienvenido a Nexus Gaming! Descubre los últimos y mejores videojuegos para todas las consolas en un solo lugar. Con ofertas exclusivas y un catálogo en constante expansión, siempre encontrarás algo que te apasione. Únete a la comunidad de gamers más entusiasta y lleva tu experiencia de juego al siguiente nivel. ¡Tu aventura comienza aquí!
+            </p>
+            <div class="butons">
+                <a href="#" class="btn-1">Informacion</a>
+                <a href="#" class="btn-1">Juegos</a>
             </div>
         </div>
     </header>
-        <div>
-            <h2 class="mejoresJuegos">🎮 JUEGOS DEL MOMENTO 🎮</h2>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class=" popular-content carousel-inner" id="carousel">
-                <div class="carousel-item active">
-                    <img src="/imagenes/g4.jpg" class="" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://emprendedores.es/wp-content/uploads//Among-Us-1200x675-1.jpg" class="" alt="...">
-                </div>
-                <div class="carousel-item ">
-                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3241660/fda868129a96b58493b4935c7e2c3390b4ebb108/capsule_616x353.jpg?t=1740578354" class="" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/imagenes/g3.jpg" class="" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/imagenes/g5.jpg" class="" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/imagenes/g6.jpg" class="" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     <main class=" product container" id="main">
-        <h2>Todos los juegos</h2>
-        <div class="row product-content">
-
-            <div class="col product-1">
-                <img src="imagenes/dota2.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Dota 2</h3>
-                    <div class="price">
+        <section id="juegos-del-momento">
+            <div>
+                <h2 class="mejoresJuegos">🎮 JUEGOS DEL MOMENTO 🎮</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class=" popular-content carousel-inner" id="carousel">
+                    <div class="carousel-item active">
+                        <img src="/imagenes/g4.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://emprendedores.es/wp-content/uploads//Among-Us-1200x675-1.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3241660/fda868129a96b58493b4935c7e2c3390b4ebb108/capsule_616x353.jpg?t=1740578354" class="" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/imagenes/g3.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/imagenes/g5.jpg" class="" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/imagenes/g6.jpg" class="" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <h2 class="titulo">Todos los juegos</h2>
+        <div class="row " id="todos-los-juegos">
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/dota2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dota 2</h5>
+                        <div class="price">
                         <p>S/75</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-
-            <div class="col product-1">
-                <img src="imagenes/Lolcito.jpg" alt="">
-                <div class="product-txt">
-                    <h3>League of Legends</h3>
-                    <div class="price">
-                        <p>S/50</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/Lolcito.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">League of Legends</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/l3.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Clash Royale</h3>
-                    <div class="price">
-                        <p>S/100</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/l3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Clash Royale</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/Brawl.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Brawl Star</h3>
-                    <div class="price">
-                        <p>S/150</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/Brawl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Brawl Stars</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/lef.jpg" alt="">
-                <div class="product-txt">
-                    <h3>LEST 4 DEAD 2</h3>
-                    <div class="price">
-                        <p>S/25</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/lef.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LEFT 4 DEAD 2</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/fornite.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Fornite</h3>
-                    <div class="price">
-                        <p>S/40</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/fornite.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fornite</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-
-            <div class="col product-1">
-                <img src="imagenes/valorant.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Valorant</h3>
-                    <div class="price">
-                        <p>S/80</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;;">
+                    <img src="imagenes/valorant.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Valorant</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-
-            <div class="col product-1">
-                <img src="imagenes/counter.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Counter Strike 2</h3>
-                    <div class="price">
-                        <p>S/45</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/counter.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Counter Strike 2</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-
-            <div class="col product-1">
-                <img src="imagenes/fall.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Fall Guys</h3>
-                    <div class="price">
-                        <p>S/10</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/fall.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fall Guys</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/budokai.jpg" alt="">
-                <div class="product-txt">
-                    <h3>BUDOKAI TENKAICHI 4</h3>
-                    <div class="price">
-                        <p>S/10</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/budokai.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BUDOKAI TENKAICHI 4</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/resident.jpg" alt="">
-                <div class="product-txt">
-                    <h3>Resident Evil 4</h3>
-                    <div class="price">
-                        <p>S/10</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/resident.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Resident Evil 4</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
-            <div class="col product-1">
-                <img src="imagenes/pokemon.jpg" alt="">
-                <div class="product-txt">
-                    <h3>POKEMÓN GO</h3>
-                    <div class="price">
-                        <p>S/10</p>
-                        <a href="./index2.html" class="btn-2">comprar</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card" style="height: 100%;">
+                    <img src="imagenes/pokemon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">POKEMÓN GO</h5>
+                        <div class="price">
+                        <p>S/75</p>
+                        </div>
+                        <a href="./index2.html" class="btn btn-dark">Comprar</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="contact container">
+    <section class="contact container" id="correo">
         <div class="contact-contect">
             <h3>SUSCRIBETE A NUESTRO BLOG</h3>
             <form>
@@ -262,8 +304,6 @@
         
         </div>
     </footer>
-    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
-    <input type="checkbox" id="toggle">
 
 
     <script src="scritp.js"></script>
